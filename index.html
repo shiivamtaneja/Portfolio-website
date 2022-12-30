@@ -16,9 +16,9 @@
             </div>
             <div class="nav-bar-items">
                 <ul class="nav-bar-ul">
-                    <li><a href="" class="nav-items home" >< Home ></a></li>
-                    <li><a href="" class="nav-items about-me" >< About Me ></Home></a></li>
-                    <li><a href="" class="nav-items contact" >< Contact ></a></li>
+                    <li><a href="#" class="nav-items home" >< Home ></a></li>
+                    <li><a href="#about-me" class="nav-items about-me" >< About Me ></Home></a></li>
+                    <li><a href="#contact-me" class="nav-items contact" >< Contact ></a></li>
                 </ul>
             </div>
             <div class="hamburger">
@@ -221,7 +221,7 @@
     </section>
 
     
-    <section class="about-me-wrapper">
+    <section class="about-me-wrapper" id="about-me">
         <div class="about-me-content">
             <h2>My Expertise</h2>
             <div class="box">
@@ -360,14 +360,57 @@
             <br>
             <div class="socials">
                 <!-- https://drive.google.com/uc?export=download&id=1YENkp8cUtNu1nf5u2vlASaijolYPulJJ - google word download -->
-                <a href="https://drive.google.com/uc?export=download&id=1wkWgfvBmBaMRReda4sTIh39Ba1f1QLTB"><button class="resume-download-btn">Resume</button></a>
+                <a href="https://drive.google.com/uc?export=download&id=1wkWgfvBmBaMRReda4sTIh39Ba1f1QLTB"><button class="btn">Resume</button></a>
                 <a href="https://github.com/shiivamtaneja" class="github-logo" target="_blank"><img src="assets/images/github-logo.png" alt="Github-logo" ></a>
                 <a href="https://www.linkedin.com/in/shivam-taneja/" class="linkedin-logo" target="_blank"><img src="assets/images/linkedin-logo.png" alt="Linkedin-logo"></a>
             </div>
         </div>
     </section>
     
-    
+    <section class="contact-me-wrapper" id="contact-me">
+        <div class="contact-info">
+            <h2>Let's&nbsp;Talk.</h2>
+            <div class="contact-p">
+                <p>
+                    Avaliable for freelance opportunaties
+                    Have an exciting project you need help with, freelance inquiry or even a coffee?
+                </p>
+                <p>
+                    
+                </p>
+                
+                <div class="send-mail">
+                    <p>
+                        Send me an email!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <form action="">
+                <div class="input-data">
+                    <input type="text" id="name" class="input-field input-name" required>
+                    <label class="name">
+                        Name
+                    </label>    
+                </div>
+                <div class="input-data">
+                    <input type="text" id="email" class="input-field input-email" required>
+                    <label class="name">
+                        E-mail
+                    </label>
+                </div>
+                <div class="input-data">
+                    <textarea id="message" cols="30" rows="10" class="input-message" required></textarea>
+                    <label class="name">
+                        Message
+                    </label>
+                </div>
+                <button class="btn btn-submit" >Send Message</button>
+            </form>
+        </div>
+    </section>
 
 
     <script src="assets/js/script.js"></script>

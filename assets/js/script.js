@@ -56,7 +56,7 @@ var bg_img_wrapper = document.querySelector('.bg-image-wrapper')
 var html_content = document.querySelector('.main-content')
 
 // var bg_img_wrapper2 = document.querySelector('.bg-image-wrapper2')
-window.addEventListener('mousemove', function(e){
+wrapperMain.addEventListener('mousemove', function(e){
     
     var X = e.pageX;
     var Y = e.pageY;
