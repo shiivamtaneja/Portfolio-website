@@ -388,7 +388,7 @@
         </div>
 
         <div class="contact-form">
-            <form action="">
+            
                 <div class="input-data">
                     <input type="text" id="name" class="input-field input-name" required>
                     <label class="name">
@@ -407,12 +407,12 @@
                         Message
                     </label>
                 </div>
-                <button class="btn btn-submit" >Send Message</button>
-            </form>
+                <button class="btn btn-submit" onclick="sendMail()">Send Message</button>
+            
         </div>
     </section>
 
-
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>

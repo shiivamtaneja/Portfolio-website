@@ -53,14 +53,38 @@ ham.addEventListener('click', function(e){
 
 
 var bg_img_wrapper = document.querySelector('.bg-image-wrapper')
-var html_content = document.querySelector('.main-content')
+var html_content = document.querySelector('.main-wrapper')
+var bg_img_wrapper2 = document.querySelector('.bg-image-wrapper2')
 
-// var bg_img_wrapper2 = document.querySelector('.bg-image-wrapper2')
-wrapperMain.addEventListener('mousemove', function(e){
+html_content.addEventListener('mousemove', function(e){
     
     var X = e.pageX;
     var Y = e.pageY;
 
-    html_content.style.transform = "translate(" + X/100  + "px, " + (Y/90) +"px)"
-    // bg_img_wrapper2.style.transform = "translate(" + (-X/25)  + "px, " + (-Y/25) +"px)"
+    // html_content.style.transform = "translate(" + X/100  + "px, " + (Y/90) +"px)"
+    bg_img_wrapper2.style.transform = "translate(" + (-X/25)  + "px, " + (-Y/25) +"px)"
+    bg_img_wrapper.style.transform = "translate(" + (X/25)  + "px, " + (Y/25) +"px)"
 })
+
+function sendMail() {
+    
+    
+    var Sname = document.getElementById('name').value;
+    var Semail = document.getElementById('email').value;
+    var SMessage = document.getElementById('message').value;
+    
+    
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "shivamsmtp@gmail.com",
+        Password : "DC5F3F031AEB0D10B722E1759C4187473DBA",
+        // SecureToken: "E3834BE4FAA8ADFD55C1A393C150D3913B0B",
+        To : 'shivamsmtp@gmail.com',
+        From : "shivamsmtp@gmail.com",
+        Subject : "Mail from Contact Page",
+        Body : "Name: " + Sname + "<br/> User Email: " + Semail + "<br/> User Message: " + SMessage
+    }).then(
+      message => alert(message, "I'll get back to you")
+    );
+}
+

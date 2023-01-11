@@ -20,6 +20,27 @@ body {
     /* height: 300vh; */
 }  
 
+html::-webkit-scrollbar {
+    width: 1vw;
+  }
+  
+  html::-webkit-scrollbar-thumb {
+    background-color: #5438DC;
+    border: .125em solid #DEDCDC;
+    border-radius: 100vw;
+  }
+  
+  html::-webkit-scrollbar-thumb:hover {
+    background-color: #5438DC;
+  }
+  
+  html::-webkit-scrollbar-track {
+    border-radius: 100vw;
+    /* margin-block: .5em; */
+    margin: .125em .125em;
+    background-color: #DEDCDC;
+  }
+
 
 .nav-bar {
     top: 0;
